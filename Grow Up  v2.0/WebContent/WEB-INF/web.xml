@@ -4,14 +4,25 @@
   <welcome-file-list>
     <welcome-file>signin.jsp</welcome-file>
   </welcome-file-list>
-  <servlet>
+    <servlet>
     <description></description>
-    <display-name>UserServlet</display-name>
-    <servlet-name>UserServlet</servlet-name>
-    <servlet-class>com.growup.user.UserServlet</servlet-class>
+    <display-name>SignupServlet</display-name>
+    <servlet-name>SignupServlet</servlet-name>
+    <servlet-class>com.growup.user.SignupServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>UserServlet</servlet-name>
-    <url-pattern>/UserServlet</url-pattern>
+    <servlet-name>SignupServlet</servlet-name>
+    <url-pattern>/SignupServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SigninServlet</display-name>
+    <servlet-name>SigninServlet</servlet-name>
+    <servlet-class>com.growup.user.SigninServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SigninServlet</servlet-name>
+    <url-pattern>/SigninServlet</url-pattern>
+  </servlet-mapping>
+
 </web-app>
