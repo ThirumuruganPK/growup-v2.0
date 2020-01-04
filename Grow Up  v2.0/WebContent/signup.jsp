@@ -22,8 +22,8 @@
             <div class="container">
                 <div class="signup-content">
                     <div class="signup-form">
-                        <h2 class="form-title">Sign up</h2>
-                        <form  action="./SnServlet" method="POST" class="register-form" id="register-form">
+                        <h2 class="form-title">Create Account</h2>
+                        <form  action="./SignupServlet" method="POST" class="register-form" id="register-form">
                             <div class="form-group">
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
                                 <input type="text" name="name" id="name" placeholder="Your Name"/>
@@ -57,6 +57,7 @@
             </div>
         </section>    
  </div>
+ 
     <!-- JS -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="js/main.js"></script>

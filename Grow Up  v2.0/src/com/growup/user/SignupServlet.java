@@ -1,19 +1,21 @@
 package com.growup.user;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.sql.SQLException;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.growup.db.MakeConnection;
 
 
 public class SignupServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+ 
   
     public SignupServlet() {
         super();
@@ -36,7 +38,7 @@ public class SignupServlet extends HttpServlet {
 			mk.pst.setString(3, mailid);
 			int x=mk.pst.executeUpdate();
 			if(x==1){
-				response.sendRedirect("signin.jsp");
+				response.sendRedirect("welcome_msg.jsp");
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

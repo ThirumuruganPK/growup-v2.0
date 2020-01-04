@@ -15,6 +15,11 @@
 
     <!-- Main css -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- <script type="text/javascript">
+    alert("You have Created Account Successfully."
+    		+" \n \n "
+    		+"Please signin..");
+    </script> -->
 </head>
 <body>
 	<%@ include file="loginnavbar.jsp" %>
@@ -60,6 +65,7 @@
             </div>
         </section>
     </div>
+   
     <!-- JS -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="js/main.js"></script>

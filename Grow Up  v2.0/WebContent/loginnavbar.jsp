@@ -27,7 +27,7 @@
         <a class="nav-link" href="signin.jsp" >SignIn</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="signup.jsp" style="color:#ffffff;">SignUp</a>
+        <a class="nav-link" href="signup.jsp">SignUp</a><!--  style="color:#ffffff;" -->
       </li>
     </ul>
   </div>
