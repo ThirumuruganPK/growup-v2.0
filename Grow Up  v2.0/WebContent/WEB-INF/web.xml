@@ -28,10 +28,10 @@
     <description></description>
     <display-name>AddServlet</display-name>
     <servlet-name>AddServlet</servlet-name>
-    <servlet-class>com.growup.process.AddServlet</servlet-class>
+    <servlet-class>com.growup.process.AddFeedbackServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>AddServlet</servlet-name>
-    <url-pattern>/AddServlet</url-pattern>
+    <url-pattern>/AddFeedbackServlet</url-pattern>
   </servlet-mapping>
 </web-app>

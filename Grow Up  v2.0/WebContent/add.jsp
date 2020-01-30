@@ -34,31 +34,12 @@
                     <h2 class="title">Interview Feedback Form</h2>
                 </div>
                 <div class="card-body">
-                    <form method="POST">
-<!--                         <div class="form-row m-b-55">
-                            <div class="name">Your Name</div>
-                            <div class="value">
-                                <div class="row row-space">
-                                    <div class="col-2">
-                                        <div class="input-group-desc">
-                                            <input class="input--style-5" type="text" name="first_name">
-                                            <label class="label--desc">first name</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-2">
-                                        <div class="input-group-desc">
-                                            <input class="input--style-5" type="text" name="last_name">
-                                            <label class="label--desc">last name</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
+                    <form action="./AddFeedbackServlet" method="POST" >
                         <div class="form-row">
                             <div class="name">Your Name</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="text" name="company">
+                                    <input class="input--style-5" type="text" name="name">
                                 </div>
                             </div>
                         </div>
@@ -76,7 +57,7 @@
                                 <div class="row row-refine">
                                     <div class="col-3">
                                         <div class="input-group-desc">
-                                            <input class="input--style-5" type="text" name="area_code" value="+91">
+                                            <input class="input--style-5" type="text" name="areacode" value="+91">
                                             <label class="label--desc">Area Code</label>
                                         </div>
                                     </div>
@@ -267,40 +248,10 @@
 				              <div class="validation"></div>
 				            </div>
                             </div>
-                        </div>
-                        <!-- <div class="form-row">
-                            <div class="name">Subject</div>
-                            <div class="value">
-                                <div class="input-group">
-                                    <div class="rs-select2 js-select-simple select--no-search">
-                                        <select name="subject">
-                                            <option disabled="disabled" selected="selected">Choose option</option>
-                                            <option>Subject 1</option>
-                                            <option>Subject 2</option>
-                                            <option>Subject 3</option>
-                                        </select>
-                                        <div class="select-dropdown"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row p-t-20">
-                            <label class="label label--block">Are you an existing customer?</label>
-                            <div class="p-t-15">
-                                <label class="radio-container m-r-55">Yes
-                                    <input type="radio" checked="checked" name="exist">
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="radio-container">No
-                                    <input type="radio" name="exist">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                        </div> -->
-                        
+                        </div>                
                         <div>
                             <button class="btn btn--radius-2 btn--red" type="submit" style="border-bottom: solid 2px #34495e; margin-right: 20px;">Submit</button>
-                            <button class="btn btn--radius-2 btn--red" type="submit" style="border-bottom: solid 2px #34495e">Reset</button>
+                            <button class="btn btn--radius-2 btn--red" type="reset" style="border-bottom: solid 2px #34495e">Reset</button>
                         </div>
                     </form>
                 </div>
