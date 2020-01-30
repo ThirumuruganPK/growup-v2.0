@@ -33,7 +33,7 @@
       </a>
       <div class="dropdown-menu">
         <a class="dropdown-item" href="add.jsp">Add</a>
-        <a class="dropdown-item" href="#">View</a>
+        <a class="dropdown-item" href="view.jsp">View</a>
         <a class="dropdown-item" href="#">Delete</a>
         <a class="dropdown-item" href="#">Update</a>
       </div>
