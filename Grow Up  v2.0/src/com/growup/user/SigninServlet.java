@@ -53,7 +53,8 @@ public class SigninServlet extends HttpServlet {
 			if(uname.equals(user) && upass.equals(pass)){
 				response.sendRedirect("home.jsp");
 			}else{
-				response.sendRedirect("wrongsignin.jsp");
+				// Will modify this line soon
+				//response.sendRedirect("wrongsignin.jsp");
 			}
 			
 			}

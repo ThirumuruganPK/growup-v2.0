@@ -4,7 +4,7 @@
   <welcome-file-list>
     <welcome-file>signin.jsp</welcome-file>
   </welcome-file-list>
-   <servlet>
+  <servlet>
     <description></description>
     <display-name>SignupServlet</display-name>
     <servlet-name>SignupServlet</servlet-name>
@@ -24,5 +24,14 @@
     <servlet-name>SigninServlet</servlet-name>
     <url-pattern>/SigninServlet</url-pattern>
   </servlet-mapping>
-
+  <servlet>
+    <description></description>
+    <display-name>AddServlet</display-name>
+    <servlet-name>AddServlet</servlet-name>
+    <servlet-class>com.growup.process.AddServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddServlet</servlet-name>
+    <url-pattern>/AddServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
