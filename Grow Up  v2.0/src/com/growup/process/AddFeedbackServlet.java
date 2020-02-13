@@ -1,7 +1,6 @@
 package com.growup.process;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -33,7 +32,6 @@ public class AddFeedbackServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 				response.setContentType("text/html");
-				PrintWriter pw=response.getWriter();
 		
 			try {
 				java.util.Date date = null;
@@ -86,9 +84,11 @@ public class AddFeedbackServlet extends HttpServlet {
 				pst.setString(17, email);
 				pst.setString(18, yourname);
 				int x=pst.executeUpdate();
+				
+				
 				if(x==1){
-					pw.print("Feedback inserted");
-
+					
+					response.sendRedirect("record_insert_msg.jsp");
 			}
 		} catch (ClassNotFoundException | SQLException | ParseException e) {
 			// TODO Auto-generated catch block

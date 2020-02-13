@@ -23,6 +23,10 @@
   <!-- Navbar links -->
   <div class="collapse navbar-collapse " id="collapsibleNavbar">
     <ul class="navbar-nav ml-auto">
+    
+    <li class="nav-item">
+        <a  style="color:white">Welcome <b class="navbar-brand"><%= session.getAttribute("user") %></b></a>
+      </li>
     <li class="nav-item">
         <a class="nav-link" href="home.jsp" >Home</a>
       </li>
@@ -41,7 +45,7 @@
         <a class="nav-link" href="aboutus.jsp">About Us</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link logout-border" href="#" style="color:#ffffff;">Logout</a>
+        <a class="nav-link logout-border" href="./LogoutServlet">Logout</a>
       </li>
     </ul>
   </div>

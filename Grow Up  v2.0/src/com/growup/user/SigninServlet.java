@@ -6,10 +6,12 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.growup.db.MakeConnection;
 
@@ -41,6 +43,8 @@ public class SigninServlet extends HttpServlet {
 		 */
 		String uname = request.getParameter("uname");
 		String upass = request.getParameter("upass");
+		
+		
 		try {
 			PreparedStatement pst = con.prepareStatement("select username,password from users where username=? and password =? ");
 			pst.setString(1, uname);
@@ -51,10 +55,15 @@ public class SigninServlet extends HttpServlet {
 			String pass=rs.getString("password");
 			
 			if(uname.equals(user) && upass.equals(pass)){
-				response.sendRedirect("home.jsp");
+				HttpSession session = request.getSession(false);
+				session.setAttribute("user", user);
+				session.setAttribute("pass", pass);
+				if(session != null){
+				RequestDispatcher dispatcher = request.getRequestDispatcher("home.jsp");
+				dispatcher.forward(request, response);
+				}
 			}else{
-				// Will modify this line soon
-				//response.sendRedirect("wrongsignin.jsp");
+				//will add the code soon
 			}
 			
 			}
